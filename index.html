@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="scss/main.css">
     <title>Twenty One Pilots | Fan Website</title>
 </head>
+
 <body>
-    <aside>
+    
         <nav id="nav" class="hide-mobile">
             <ul>
-                <li id="exit-btn">
+                <li id="exit-btn" class="hide-desktop">
                     <img src="image/navIcons/exit2.svg" alt="exit icon">
                 </li>
                 <li><a href="#">Home</a></li>
@@ -19,14 +21,45 @@
                 <li><a href="#">Merchendise</a></li>
             </ul>
         </nav>
-    </aside>
+    
 
     <main id="landing-page">
-            <header id="hide-desktop">
-                    <img id="menu" src="image/navIcons/burger_icon.svg" alt="menu icon">
-               </header>
+        <header id="hide-desktop">
+            <img class="hide-desktop" id="menu" src="image/navIcons/burger_icon.svg" alt="menu icon">
+        </header>
     </main>
+
+    <section id="tickets">
+        <div>
+            <h1>STOCKHOLM</h1>
+            <h2>Globen</h2>
+            <img src="image/mobile/Yellow_line.svg" alt="line">
+        </div>
+        <div>
+            <h1>PERU</h1>
+            <h2>National Stadium of Peru</h2>
+            <img src="image/mobile/Yellow_line.svg" alt="line">
+        </div>
+        <div>
+            <h1>MADRID</h1>
+            <h2>Santiago Bernabéu-stadion</h2>
+            <img src="image/mobile/Yellow_line.svg" alt="line">
+        </div>
+        <div id="button-container">
+        <button><a href="#">TICKETS</a></button>
+    </div>
+
+    <img id="noHead" src="image/mobile/noHead.svg" alt="image">
+    </section>
+
+    <section id="merch">
+        <img src="image/merch/black-t-shirt.png" alt="black-t-shirt">
+        <img src="image/merch/black_hoodie.png" alt="black_hoodie">
+        <img src="image/merch/camo_t-shirt.png" alt="camo t-shirt">
+        <img src="image/merch/camo_hoodie.png" alt="camo hoodie">
+    </section>
 
     <script src="js/nav.js"></script>
 </body>
+
 </html>

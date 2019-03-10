@@ -16,6 +16,7 @@ html, body{
     height: 200vh; 
     width: 100%;
     font-family: montserrat;
+    transition: all 0.4s;
 }
 
 h1, a, p, h2{
@@ -34,15 +35,14 @@ h1, a, p, h2{
 
 
     nav{
-    position: relative;
+    position: fixed;
     top: 0;
     right: 0;
-    transition: 0.8s ease !important;
+    transition: 0.4s ease !important;
     width: 100%;
     height: 100vh;
-    background: url(../image/mobile/Nav2.svg);
+    background: url(../image/mobile/Nav2.svg) ;
     background-size: cover;
-    background-repeat: none;
     z-index: 9999;
 
     ul{
@@ -75,13 +75,114 @@ h1, a, p, h2{
 
 #landing-page{
     position: relative;
-    top:-100vh;
-    background: url(../image/mobile/bg-mobile.svg);
-    height: 100vh;
+    top:0;
+    background: url(../image/mobile/bg-mobile.svg) no-repeat;
+    height: 120vh;
+
 
     #menu{
-        float: right;
+        position: fixed;
+        right: 0;
         padding: 2em 2em;
         cursor: pointer;
     }
 }
+
+#tickets{
+    margin-top: -5em;
+
+    img{
+        height: 1em;
+        padding-top: 2em;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    div:nth-child(2), div:nth-child(3){
+        margin-top: 15%;
+    }
+
+    #button-container{
+        display: flex;
+        margin-top: 15%;
+        justify-content: center;
+        button{
+            background: color(mainYellow);
+            text-align: center;
+            border: color(mainYellow);
+            padding: 0.5em 2em;
+            a{
+                color: #000;
+                text-decoration: none;
+                font-size: 2em;
+                padding: 1.5em;
+                font-family: montserrat;
+            }
+        }
+    }
+
+    #noHead{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#merch{
+    height: 180vh;
+    background: url(../image/mobile/trench_mobile_pick.svg) no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+
+    img{
+        position: relative;
+        width: 90%;
+        left: 5%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .hide-mobile{
+        visibility: visible;
+    }
+
+    #nav{
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        height: 100%;
+        background-size: cover;
+
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .hide-desktop{
+        visibility: hidden;
+    }
+
+    #landing-page{
+        width: 80%;
+        height: 100%;
+        position: relative;
+        background: url(../image/desktop/Lading-page-bg.png);
+        background-repeat: no-repeat;
+        background-size: 91%;
+        left: 28%;
+    }
+
+} 
