@@ -16,43 +16,52 @@
                 <li id="exit-btn" class="hide-desktop">
                     <img src="image/navIcons/exit2.svg" alt="exit icon">
                 </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">Merchendise</a></li>
+                <li><a id="homeButton">Home</a></li>
+                <li><a id="ticketsButton">Tickets</a></li>
+                <li><a id="merchButton">Merchendise</a></li>
             </ul>
         </nav>
     
 
-    <main id="landing-page">
+    <main class="landing-page" id="landing-page">
         <header id="hide-desktop">
             <img class="hide-desktop" id="menu" src="image/navIcons/burger_icon.svg" alt="menu icon">
         </header>
     </main>
 
-    <section id="tickets">
+    <section id="tickets" class="tickets">
+        <div class="tickets-containers">
         <div>
             <h1>STOCKHOLM</h1>
             <h2>Globen</h2>
             <img src="image/mobile/Yellow_line.svg" alt="line">
+            <div class="hide-mobile" id="button-container">
+                    <button><a href="#">TICKETS</a></button>
+                </div>
+            
         </div>
         <div>
             <h1>PERU</h1>
             <h2>National Stadium of Peru</h2>
-            <img src="image/mobile/Yellow_line.svg" alt="line">
+            <img  src="image/mobile/Yellow_line.svg" alt="line">
+            <div  class="hide-mobile" id="button-container">
+                    <button><a href="#">TICKETS</a></button>
+                </div>
+            
         </div>
         <div>
             <h1>MADRID</h1>
             <h2>Santiago Bernabéu-stadion</h2>
             <img src="image/mobile/Yellow_line.svg" alt="line">
+            <div  class="hide-mobile" id="button-container">
+                    <button><a href="#">TICKETS</a></button>
+                </div>
         </div>
-        <div id="button-container">
-        <button><a href="#">TICKETS</a></button>
     </div>
-
     <img id="noHead" src="image/mobile/noHead.svg" alt="image">
     </section>
 
-    <section id="merch">
+    <section id="merch" class="merch">
         <img src="image/merch/black-t-shirt.png" alt="black-t-shirt">
         <img src="image/merch/black_hoodie.png" alt="black_hoodie">
         <img src="image/merch/camo_t-shirt.png" alt="camo t-shirt">
@@ -60,6 +69,32 @@
     </section>
 
     <script src="js/nav.js"></script>
+    <script type="module">
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+
+        const home = document.getElementById('landing-page');
+        const tickets = document.getElementById('tickets');
+        const merch = document.getElementById('merch');
+        const time = 'duration: 500,';
+
+        homeButton.addEventListener('click', function (e) {
+            jump('.landing-page', {
+                time
+            })
+        });
+
+        ticketsButton.addEventListener('click', function (event){
+            jump('.tickets', {
+                time
+            })
+        })
+        merchButton.addEventListener('click', function (event){
+            jump('.merch', {
+                time
+            })
+        });
+        
+//w</script>
 </body>
 
 </html>
