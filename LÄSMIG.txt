@@ -1,0 +1,29 @@
+Hej Bosse!
+
+Denna hemsida fungerar endast i vanlig 1920x1080 (ingen zomm) och mobilt läge! Blev lite kort på tid men det fick bli så!
+
+Planen var att göra en hemsida i stlingen utav Twenty One Pilots nya album "Trech" och den har mycket gul och mörka färger! Därav färg temat! Jag vet att den inte är väldigt bra för folk med dålig syn men "the target audience" är yngre folk och dom flästa i min ålder gillar mörka färger!
+
+Plan:
+    Twent One Pilots album "trech" theme.
+    static page;
+    mobile friendly;
+    Ska ha nästan alla sidor som deras riktiga sida www.twentyonepilots.com;
+
+node_modules:
+    jump.js (till för att göra en delay när man klickar på någon av knapparna)
+
+Sources:
+    images: allt från deras hemsida eller google sedan redigerat utav mig i photoshop och adobe xd för att göra en prototyp
+    jump.js av callmecavs (https://github.com/callmecavs/jump.js)
+Program:
+    Adobe Xd (adobe experience design)
+    Adobe photoshop
+    Visual Studio Code
+Technologies:
+    Html5
+    Es6
+    Node.js
+    Scss (sass)
+    npm
+    git
