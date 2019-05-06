@@ -1,7 +1,6 @@
 Hej Bosse!
 
-OBS: Du måste tyvär ladda ner denna sida eftersom att github pages strular just nu!
-
+Här kan du se sidan live https://theblackvoid.github.io/twenty-one-pilots-website/
 
 Denna hemsida fungerar endast i vanlig 1920x1080 (ingen zomm) och mobilt läge! Blev lite kort på tid men det fick bli så!
 
